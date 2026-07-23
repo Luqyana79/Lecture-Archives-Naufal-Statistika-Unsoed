@@ -5,18 +5,23 @@
   <title>Arsip Perkuliahan</title>
   <style>
     body {
-      background: #0b0b0b;
-      color: white;
+      background: linear-gradient(135deg, #FFF8FA, #FFFDF5);
+      color: #555;
       font-family: Arial, sans-serif;
       text-align: center;
     }
 
     h1 {
       margin-top: 50px;
+      color: #FF8FB1;
     }
 
     .highlight {
-      color: #00e0ff;
+      color: #6FD3C0;
+    }
+
+    p {
+      color: #777;
     }
 
     .container {
@@ -26,26 +31,53 @@
 
     .section-title {
       margin-top: 30px;
-      color: #00e0ff;
+      color: #5FCFB8;
       text-align: left;
-      border-bottom: 1px solid #00e0ff;
-      padding-bottom: 5px;
+      border-bottom: 2px solid #BDEEE4;
+      padding-bottom: 8px;
+      font-weight: bold;
     }
 
     .card {
       display: block;
-      border: 1px solid #444;
+      border: 2px solid #FFD4E0;
+      background: #FFF1F6;
       padding: 15px;
-      margin: 10px 0;
-      border-radius: 10px;
+      margin: 12px 0;
+      border-radius: 15px;
       text-decoration: none;
-      color: white;
+      color: #555;
       transition: 0.3s;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.05);
+    }
+
+    /* Pink */
+    .card:nth-of-type(1),
+    .card:nth-of-type(4),
+    .card:nth-of-type(7) {
+      background: #FFF1F6;
+      border-color: #FFC8D8;
+    }
+
+    /* Mint */
+    .card:nth-of-type(2),
+    .card:nth-of-type(5),
+    .card:nth-of-type(8) {
+      background: #EFFCF8;
+      border-color: #BDEEE4;
+    }
+
+    /* Kuning */
+    .card:nth-of-type(3),
+    .card:nth-of-type(6) {
+      background: #FFFBE8;
+      border-color: #FFE49A;
     }
 
     .card:hover {
-      background: #111;
-      border-color: #00e0ff;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.10);
+      border-color: #FFB3C7;
     }
   </style>
 </head>
